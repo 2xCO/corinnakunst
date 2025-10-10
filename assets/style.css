@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    display: flex;
+    font-family: "Antarctica";
+
+}
+
+.scroll-container{
+    overflow-y: scroll;
+    height: 100vh;
+    width: 25vw;
+    scroll-snap-type: y mandatory;
+}
+
+.webkit-scrollbar {
+    display: none;
+}
+
+#aaa, #bbb, #ccc, #ddd{
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+#aaa{
+    background-color: beige;
+}
+
+#bbb{
+    background-color: rgb(235, 245, 220);
+}
+
+#ccc{
+    background-color: rgb(220, 234, 245);
+}
+
+#ddd{
+    background-color: rgb(245, 220, 230);
+}
