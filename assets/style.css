@@ -1,14 +1,61 @@
 body {
     background-color: white;
-    height: 100vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 0%;
+    height: 200vh;
     width: 100vw;
-    overflow-y: hidden;
+    overflow-y: scroll;
     display: flex;
     font-family: "Antarctica";
-
 }
 
-.scroll-container{
+p{
+    font-size: 2em;
+}
+
+.Du {
+    position: bottom;
+    
+}
+
+
+/* .ducontainer{
+    height: 100vh;
+    position: fixed;
+    margin-top: 0%;
+} */
+
+/* .Du {
+    width: fit-content; 
+    height: fit-content;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 0vh;
+
+  animation: schaumal 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+    @keyframes schaumal {
+ 
+        0%   {background-color:red; margin-top: 0vh;}
+        50%  {background-color:blue; margin-top: 50vh;}
+        100% {background-color:red; margin-top: 100vh;}
+
+
+    }
+
+.Ich {
+    font-size: 2em;
+    position: fixed;
+    margin-top: 50%;
+} */
+
+
+
+/* .scroll-container{
     overflow-y: scroll;
     height: 100vh;
     width: 25vw;
@@ -38,4 +85,4 @@ body {
 
 #ddd{
     background-color: rgb(245, 220, 230);
-}
+} */
