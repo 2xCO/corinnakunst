@@ -3,10 +3,14 @@ body {
     padding: 0;
     margin: 0;
     margin-top: 0%;
-    height: 200vh;
+    height: 400vh;
     width: 100vw;
     overflow-y: scroll;
-    display: flex;
+
+    display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
     font-family: "Antarctica";
 }
 
@@ -14,46 +18,57 @@ p{
     font-size: 2em;
 }
 
-.Du {
-    position: bottom;
-    
+.ich{
+    width: fit-content; 
+    height: fit-content;
+    grid-area: 1 / 1 / 2 / 2 ;/*row-start col-start row-end col-end */
+    transform: translateY(calc(var(--scroll) * 400vh));
 }
+    .ichperspektive {
+    font-size: 2em;
+    }
 
-
-/* .ducontainer{
-    height: 100vh;
-    position: fixed;
-    margin-top: 0%;
-} */
-
-/* .Du {
+.Du {
     width: fit-content; 
     height: fit-content;
     font-size: 2em;
     display: inline-block;
-    margin-top: 0vh;
+    grid-area: 1 / 5 / 2 / 6 ;/*row-start col-start row-end col-end */
 
-  animation: schaumal 1s linear infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+    transform: translateY(calc(var(--scroll) * 400vh));
+
+  /* animation: schaumal 1s linear infinite; */
+  /* transition: width 0.1s;
+  transition-delay: calc(var(--scroll) * -1s); */
 }
 
-    @keyframes schaumal {
+
+    /* @keyframes schaumal {
  
         0%   {background-color:red; margin-top: 0vh;}
         50%  {background-color:blue; margin-top: 50vh;}
         100% {background-color:red; margin-top: 100vh;}
 
 
+    } */
+
+.projektecontainer{
+    grid-area: 1 / 2 / 2 / 5 ;/*row-start col-start row-end col-end */
+}
+
+    .content{
+        width: 3fr;
+        height: 90vh;
+        margin: 5%;
+        background-color: blueviolet;
+
     }
 
-.Ich {
-    font-size: 2em;
+/* .ducontainer{
+    height: 100vh;
     position: fixed;
-    margin-top: 50%;
+    margin-top: 0%;
 } */
-
-
 
 /* .scroll-container{
     overflow-y: scroll;
