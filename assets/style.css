@@ -22,7 +22,7 @@ p{
     width: fit-content; 
     height: fit-content;
     grid-area: 1 / 1 / 2 / 2 ;/*row-start col-start row-end col-end */
-    transform: translateY(calc(var(--scroll) * 400vh));
+    transform: translateY(calc(var(--scroll) * 400vh + 50vh));
 }
     .ichperspektive {
     font-size: 2em;
