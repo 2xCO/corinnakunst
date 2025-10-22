@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
     margin-top: 0%;
-    height: 400vh;
+    height: 100vh;
     width: 100vw;
     overflow-y: scroll;
 
@@ -22,11 +22,35 @@ p{
     width: fit-content; 
     height: fit-content;
     grid-area: 1 / 1 / 2 / 2 ;/*row-start col-start row-end col-end */
-    transform: translateY(calc(var(--scroll) * 400vh + 50vh));
+    /* transform: translateY(calc(var(--scroll) * 400vh)); */
+    /* position: sticky; */
+    /* top: 50vh; */
 }
+
     .ichperspektive {
     font-size: 2em;
     }
+
+    .meet{
+        background-color: aquamarine;
+        position: fixed;
+        transform: translateY(50vh); 
+        /* margin-top: 50vh; */
+        /* animation: meetani 1s ease-out infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -1s); */
+    }
+            /* @keyframes meetani {
+ 
+            0%   {background-color:red;}
+            100% {background-color:blue; transform: translateY(20vh);}
+             */
+    /* } */
+
+    .go{
+        transform: translateY(calc(var(--scroll) * 400vh)); 
+    }
+
 
 .Du {
     width: fit-content; 
@@ -34,8 +58,10 @@ p{
     font-size: 2em;
     display: inline-block;
     grid-area: 1 / 5 / 2 / 6 ;/*row-start col-start row-end col-end */
+    /* position: sticky; */
+    
 
-    transform: translateY(calc(var(--scroll) * 400vh));
+    /* transform: translateY(calc(var(--scroll) * 400vh)); */
 
   /* animation: schaumal 1s linear infinite; */
   /* transition: width 0.1s;
